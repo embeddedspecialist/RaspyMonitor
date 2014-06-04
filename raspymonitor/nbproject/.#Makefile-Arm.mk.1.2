@@ -1,0 +1,667 @@
+#
+# Generated Makefile - do not edit!
+#
+# Edit the Makefile in the project folder instead (../Makefile). Each target
+# has a -pre and a -post target defined where you can add customized code.
+#
+# This makefile implements configuration specific macros and targets.
+
+
+# Environment
+MKDIR=mkdir
+CP=cp
+CCADMIN=CCadmin
+RANLIB=ranlib
+CC=/usr/local/bin/arm-linux-gcc
+CCC=/usr/local/bin/arm-linux-g++
+CXX=/usr/local/bin/arm-linux-g++
+FC=
+AS=as
+
+# Macros
+CND_PLATFORM=GNU-Linux-x86
+CND_CONF=Arm
+CND_DISTDIR=dist
+
+# Include project Makefile
+include Makefile
+
+# Object Directory
+OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
+
+# Object Files
+OBJECTFILES= \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/MsgUtil/CMsgRecv.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/changeovercoord.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2405.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalin2out.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/remotedido.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2890.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/humcontroller.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/di2ao.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidlmd.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/c3pointctrl.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/buttoncontroller.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds18X20.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/upid2.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/utactrl.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewireengine.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/Cmd.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/scheduler.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/analogIO.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/accessLog.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv-adv.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/afoerror.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/muxBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vmultidido.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/stepdigitalout.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthCnt.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/pidBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/binaryEncoder.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owtrnu.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/C3PointCtrlBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timeddido.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FileUtil/fileUtil.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Ports/SocketPort.o \
+	${OBJECTDIR}/afomonitor.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthacc.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/logblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/block.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalio.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/xmlutil.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/gateblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/IniFileHandler.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/userial/linuxlnk.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ibuttonreader.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl2.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vpid.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/floorcoord2.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/newEngine.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/climaticcurve.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalctrl.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/PID/pid.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/ioutil.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ifblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/opblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/temperaturecontroller.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vcoordinator.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/timeUtil.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Label/CLabel.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/hystblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/crcutil.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FoxUtil/gio.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timemarkerctrl.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlocksCommonData.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/costantblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlockCoordinator.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2408.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2-vav.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/timerblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClimaticCurveBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pumpcontroller.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/LibIniFile.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/inifilemanager.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timer.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/cownet.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewirenet.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ic.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/alarmcoordinator.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/ClockUtil/ClockManager.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2438.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/commonDefinitions.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Strings/cstring.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempCondensa.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/satblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthmgc.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tagcontrol.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/contblock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/execcommands.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owllu.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/triggerBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vhystcontroller.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempctrlhyst.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidsimple.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owsesu.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/delayBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2751.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/ownetu.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClockBlock.o \
+	${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vdido.o
+
+# C Compiler Flags
+CFLAGS=-O0 -g0 -Wall
+
+# CC Compiler Flags
+CCFLAGS=-O0 -g0 -Wall
+CXXFLAGS=-O0 -g0 -Wall
+
+# Fortran Compiler Flags
+FFLAGS=
+
+# Assembler Flags
+ASFLAGS=
+
+# Link Libraries and Options
+LDLIBSOPTIONS=
+
+# Build Targets
+.build-conf: ${BUILD_SUBPROJECTS}
+	${MAKE}  -f nbproject/Makefile-Arm.mk dist/Arm/GNU-Linux-x86/afomonitor
+
+dist/Arm/GNU-Linux-x86/afomonitor: ${OBJECTFILES}
+	${MKDIR} -p dist/Arm/GNU-Linux-x86
+	/usr/local/bin/arm-linux-g++ -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/afomonitor ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/MsgUtil/CMsgRecv.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/MsgUtil/CMsgRecv.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/MsgUtil
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/MsgUtil/CMsgRecv.o ../afoLibs/MsgUtil/CMsgRecv.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/changeovercoord.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/changeovercoord.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/changeovercoord.o ../afoLibs/Moduli/changeovercoord.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2405.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds2405.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2405.o ../afoLibs/Moduli/ds2405.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalin2out.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/digitalin2out.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalin2out.o ../afoLibs/Moduli/digitalin2out.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/remotedido.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/remotedido.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/remotedido.o ../afoLibs/Moduli/remotedido.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2890.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds2890.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2890.o ../afoLibs/Moduli/ds2890.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/humcontroller.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/humcontroller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/humcontroller.o ../afoLibs/Moduli/humcontroller.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/di2ao.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/di2ao.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/di2ao.o ../afoLibs/Moduli/di2ao.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidlmd.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/pidlmd.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidlmd.o ../afoLibs/Moduli/pidlmd.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/c3pointctrl.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/c3pointctrl.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/c3pointctrl.o ../afoLibs/Moduli/c3pointctrl.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/buttoncontroller.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/buttoncontroller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/buttoncontroller.o ../afoLibs/Moduli/buttoncontroller.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds18X20.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds18X20.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds18X20.o ../afoLibs/Moduli/ds18X20.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/upid2.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/upid2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/upid2.o ../afoLibs/Moduli/upid2.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthvlv.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv.o ../afoLibs/Moduli/nthvlv.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/utactrl.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/utactrl.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/utactrl.o ../afoLibs/Moduli/utactrl.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewireengine.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/conewireengine.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewireengine.o ../afoLibs/Moduli/conewireengine.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/Cmd.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/XML/Cmd.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/Cmd.o ../afoLibs/XML/Cmd.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/scheduler.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/scheduler.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/scheduler.o ../afoLibs/Moduli/scheduler.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/analogIO.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/analogIO.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/analogIO.o ../afoLibs/Moduli/analogIO.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/accessLog.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/accessLog.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/accessLog.o ../afoLibs/Moduli/accessLog.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv-adv.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthvlv-adv.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv-adv.o ../afoLibs/Moduli/nthvlv-adv.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/afoerror.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/afoerror.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/afoerror.o ../afoLibs/Moduli/afoerror.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/muxBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/muxBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/muxBlock.o ../afoLibs/Blocks/muxBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vmultidido.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/vmultidido.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vmultidido.o ../afoLibs/Moduli/vmultidido.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/stepdigitalout.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/stepdigitalout.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/stepdigitalout.o ../afoLibs/Moduli/stepdigitalout.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthCnt.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthCnt.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthCnt.o ../afoLibs/Moduli/nthCnt.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/pidBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/pidBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/pidBlock.o ../afoLibs/Blocks/pidBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/binaryEncoder.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/binaryEncoder.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/binaryEncoder.o ../afoLibs/Blocks/binaryEncoder.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owtrnu.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/owtrnu.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owtrnu.o ../afoLibs/OWAPI/owtrnu.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/C3PointCtrlBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/C3PointCtrlBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/C3PointCtrlBlock.o ../afoLibs/Blocks/C3PointCtrlBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timeddido.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/timeddido.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timeddido.o ../afoLibs/Moduli/timeddido.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FileUtil/fileUtil.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/FileUtil/fileUtil.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FileUtil
+	${RM} $@.d
+	$(COMPILE.c) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FileUtil/fileUtil.o ../afoLibs/FileUtil/fileUtil.c
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Ports/SocketPort.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Ports/SocketPort.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Ports
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Ports/SocketPort.o ../afoLibs/Ports/SocketPort.cpp
+
+${OBJECTDIR}/afomonitor.o: nbproject/Makefile-${CND_CONF}.mk afomonitor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/afomonitor.o afomonitor.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthacc.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthacc.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthacc.o ../afoLibs/Moduli/nthacc.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/logblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/logblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/logblock.o ../afoLibs/Blocks/logblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/block.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/block.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/block.o ../afoLibs/Blocks/block.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalio.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/digitalio.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalio.o ../afoLibs/Moduli/digitalio.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/xmlutil.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/XML/xmlutil.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/XML/xmlutil.o ../afoLibs/XML/xmlutil.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/gateblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/gateblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/gateblock.o ../afoLibs/Blocks/gateblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/IniFileHandler.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/IniFile/IniFileHandler.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/IniFileHandler.o ../afoLibs/IniFile/IniFileHandler.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/userial/linuxlnk.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/userial/linuxlnk.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/userial
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/userial/linuxlnk.o ../afoLibs/OWAPI/userial/linuxlnk.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ibuttonreader.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ibuttonreader.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ibuttonreader.o ../afoLibs/Moduli/ibuttonreader.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/fullutactrl.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl.o ../afoLibs/Moduli/fullutactrl.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl2.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/fullutactrl2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/fullutactrl2.o ../afoLibs/Moduli/fullutactrl2.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vpid.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/vpid.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vpid.o ../afoLibs/Moduli/vpid.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/floorcoord2.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/floorcoord2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/floorcoord2.o ../afoLibs/Moduli/floorcoord2.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/newEngine.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/newEngine.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/newEngine.o ../afoLibs/Moduli/newEngine.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/climaticcurve.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/climaticcurve.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/climaticcurve.o ../afoLibs/Moduli/climaticcurve.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalctrl.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/digitalctrl.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/digitalctrl.o ../afoLibs/Moduli/digitalctrl.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/PID/pid.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/PID/pid.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/PID
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/PID/pid.o ../afoLibs/PID/pid.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/ioutil.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/util/ioutil.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util
+	${RM} $@.d
+	$(COMPILE.c) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/ioutil.o ../afoLibs/OWAPI/util/ioutil.c
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ifblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/ifblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ifblock.o ../afoLibs/Blocks/ifblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/opblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/opblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/opblock.o ../afoLibs/Blocks/opblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/temperaturecontroller.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/temperaturecontroller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/temperaturecontroller.o ../afoLibs/Moduli/temperaturecontroller.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vcoordinator.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/vcoordinator.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vcoordinator.o ../afoLibs/Moduli/vcoordinator.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/timeUtil.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/util/timeUtil.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util
+	${RM} $@.d
+	$(COMPILE.c) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/timeUtil.o ../afoLibs/OWAPI/util/timeUtil.c
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Label/CLabel.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Label/CLabel.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Label
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Label/CLabel.o ../afoLibs/Label/CLabel.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/hystblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/hystblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/hystblock.o ../afoLibs/Blocks/hystblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/crcutil.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/util/crcutil.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/util/crcutil.o ../afoLibs/OWAPI/util/crcutil.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FoxUtil/gio.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/FoxUtil/gio.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FoxUtil
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/FoxUtil/gio.o ../afoLibs/FoxUtil/gio.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timemarkerctrl.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/timemarkerctrl.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timemarkerctrl.o ../afoLibs/Moduli/timemarkerctrl.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlocksCommonData.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/BlocksCommonData.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlocksCommonData.o ../afoLibs/Blocks/BlocksCommonData.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/costantblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/costantblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/costantblock.o ../afoLibs/Blocks/costantblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlockCoordinator.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/BlockCoordinator.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/BlockCoordinator.o ../afoLibs/Blocks/BlockCoordinator.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthvlv2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2.o ../afoLibs/Moduli/nthvlv2.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2408.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds2408.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2408.o ../afoLibs/Moduli/ds2408.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2-vav.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthvlv2-vav.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthvlv2-vav.o ../afoLibs/Moduli/nthvlv2-vav.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/timerblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/timerblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/timerblock.o ../afoLibs/Blocks/timerblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClimaticCurveBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/ClimaticCurveBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClimaticCurveBlock.o ../afoLibs/Blocks/ClimaticCurveBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pumpcontroller.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/pumpcontroller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pumpcontroller.o ../afoLibs/Moduli/pumpcontroller.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/LibIniFile.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/IniFile/LibIniFile.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/LibIniFile.o ../afoLibs/IniFile/LibIniFile.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/inifilemanager.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/IniFile/inifilemanager.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/IniFile/inifilemanager.o ../afoLibs/IniFile/inifilemanager.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timer.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/timer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/timer.o ../afoLibs/Moduli/timer.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/cownet.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/cownet.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/cownet.o ../afoLibs/OWAPI/cownet.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewirenet.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/conewirenet.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/conewirenet.o ../afoLibs/Moduli/conewirenet.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ic.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ic.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ic.o ../afoLibs/Moduli/ic.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/alarmcoordinator.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/alarmcoordinator.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/alarmcoordinator.o ../afoLibs/Moduli/alarmcoordinator.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/ClockUtil/ClockManager.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/ClockUtil/ClockManager.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/ClockUtil
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/ClockUtil/ClockManager.o ../afoLibs/ClockUtil/ClockManager.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2438.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds2438.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2438.o ../afoLibs/Moduli/ds2438.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/commonDefinitions.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/commonDefinitions.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/commonDefinitions.o ../afoLibs/Moduli/commonDefinitions.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Strings/cstring.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Strings/cstring.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Strings
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Strings/cstring.o ../afoLibs/Strings/cstring.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempCondensa.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/tempCondensa.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.c) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempCondensa.o ../afoLibs/Moduli/tempCondensa.c
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/satblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/satblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/satblock.o ../afoLibs/Blocks/satblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthmgc.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/nthmgc.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/nthmgc.o ../afoLibs/Moduli/nthmgc.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tagcontrol.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/tagcontrol.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tagcontrol.o ../afoLibs/Moduli/tagcontrol.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/contblock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/contblock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/contblock.o ../afoLibs/Blocks/contblock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/execcommands.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/execcommands.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/execcommands.o ../afoLibs/Moduli/execcommands.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owllu.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/owllu.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owllu.o ../afoLibs/OWAPI/owllu.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/triggerBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/triggerBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/triggerBlock.o ../afoLibs/Blocks/triggerBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vhystcontroller.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/vhystcontroller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vhystcontroller.o ../afoLibs/Moduli/vhystcontroller.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempctrlhyst.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/tempctrlhyst.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/tempctrlhyst.o ../afoLibs/Moduli/tempctrlhyst.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidsimple.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/pidsimple.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/pidsimple.o ../afoLibs/Moduli/pidsimple.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owsesu.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/owsesu.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/owsesu.o ../afoLibs/OWAPI/owsesu.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/delayBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/delayBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/delayBlock.o ../afoLibs/Blocks/delayBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2751.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/ds2751.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/ds2751.o ../afoLibs/Moduli/ds2751.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/ownetu.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/OWAPI/ownetu.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/OWAPI/ownetu.o ../afoLibs/OWAPI/ownetu.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClockBlock.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Blocks/ClockBlock.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Blocks/ClockBlock.o ../afoLibs/Blocks/ClockBlock.cpp
+
+${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vdido.o: nbproject/Makefile-${CND_CONF}.mk ../afoLibs/Moduli/vdido.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli
+	${RM} $@.d
+	$(COMPILE.cc) -Wall -DUSE_ADV_VLV -DARM -I../afoLibs -I../afoLibs/FoxUtil -I../afoLibs/IniFile -I../afoLibs/Label -I../afoLibs/Moduli -I../afoLibs/MsgUtil -I../afoLibs/OWAPI -I../afoLibs/OWAPI/userial -I../afoLibs/OWAPI/util -I../afoLibs/Ports -I../afoLibs/Strings -I../afoLibs/XML -I../afoLibs/PID -I../afoLibs/FileUtil -I../afoLibs/Blocks -I. -I../afoLibs/ClockUtil -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/_DOTDOT/afoLibs/Moduli/vdido.o ../afoLibs/Moduli/vdido.cpp
+
+# Subprojects
+.build-subprojects:
+
+# Clean Targets
+.clean-conf: ${CLEAN_SUBPROJECTS}
+	${RM} -r build/Arm
+	${RM} dist/Arm/GNU-Linux-x86/afomonitor
+
+# Subprojects
+.clean-subprojects:
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+include .dep.inc

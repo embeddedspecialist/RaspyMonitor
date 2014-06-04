@@ -1,0 +1,26 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Global types
+//
+// OS independent
+//
+// Used to define types and make the same types available on QNX and Windows
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#ifndef TYPES_H
+#define TYPES_H
+
+#include <stdlib.h>
+typedef unsigned int UINT;
+
+#ifndef _WIN32
+#define false 0
+#define true  1
+#endif
+
+
+#endif
+
+
+
